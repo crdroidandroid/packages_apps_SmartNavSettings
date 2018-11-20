@@ -30,8 +30,8 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
 import android.provider.Settings;
 
-import com.invictrix.support.colorpicker.ColorPickerPreference;
-import com.invictrix.support.preferences.CustomSeekBarPreference;
+import com.crdroid.settings.preferences.colorpicker.ColorPickerPreference;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
 
 public class PulseSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -279,6 +279,6 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.INVICTRIX;
+        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
     }
 }
